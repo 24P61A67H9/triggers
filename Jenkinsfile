@@ -5,13 +5,13 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'YOUR-GITHUB-URL'
+                    url: 'https://github.com/24P61A67H9/triggers.git'
             }
         }
 
         stage('Run Script') {
             steps {
-                bat 'python test.py'
+                sh 'python3 test.py'
             }
         }
     }
