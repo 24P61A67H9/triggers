@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Script') {
             steps {
-                sh 'python3 firsttrigger/t.py'
+                sh 'python3 firsttrigger'
             }
         }
     }
